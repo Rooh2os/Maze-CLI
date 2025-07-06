@@ -10,7 +10,7 @@ def clear():
 
 def json_write(file,data,indent):
     with open(file,"w") as f:
-        json.dump(data,f,indent)
+        json.dump(data,f,indent=indent)
 
 def json_read(file):
     try:
