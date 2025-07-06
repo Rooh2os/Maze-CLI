@@ -1,4 +1,4 @@
 echo off
 cls
-python Game.py
+python game.py
 pause
