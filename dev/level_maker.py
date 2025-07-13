@@ -20,16 +20,17 @@ while True:
     level.append(leveltext.index("+") % 33)
     level.append(math.floor(leveltext.index("+") / 32))
 
+    print(level[0])
     print(level[1])
     print(level[2])
     print(level[3])
-    print(level[4])
 
     row_ptr = 0
     while row_ptr != 32:
         colum_ptr = 0
         while colum_ptr != 32:
             level.append(leveltext[row_ptr*32+colum_ptr])
+            print(level[row_ptr*32+colum_ptr+4],end="")
             colum_ptr += 1
         print("")
         row_ptr += 1
